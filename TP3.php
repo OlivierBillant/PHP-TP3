@@ -53,6 +53,8 @@ for ($i = 0; $i < count($prenoms); $i++){
 
 var_dump($nomComplet);
 
+//Attention, la balise <pre> est indispensable ici car elle prend en compte les espaces supplémentaires
+// de printf ce qui n'est pas le cas des autres balises.
 echo "<pre>";
 for ($i = 0; $i < count($prenoms); $i++){
     printf("%-20s %-20s<br>", $prenoms[$i], $noms[$i]);
